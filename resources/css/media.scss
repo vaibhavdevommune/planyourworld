@@ -1,0 +1,44 @@
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    .offcanvas {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .navbar .contact-us {
+        display: block;
+    }
+    .dropdown {
+        width: 20rem;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 992px;
+    }
+    .collapse.dont-collapse-sm {
+        display: block;
+        height: auto !important;
+        visibility: visible;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1440px;
+    }
+    .section-2 {
+        .common-title {
+            padding-right: 180px;
+        }
+    }
+}
