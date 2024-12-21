@@ -804,11 +804,11 @@ label {
         .swiper-button-prev {
             color: $primary_black;
             background-color: $primary_white;
-            width: 32px;       
-            height: 32px;     
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             aspect-ratio: 1;
-            &:hover{
+            &:hover {
                 background-color: $primary_black;
                 color: $primary_white;
                 transition: 0.5s ease-in-out;
@@ -820,22 +820,22 @@ label {
             }
         }
 
-        .swiper-button-next{
+        .swiper-button-next {
             right: 54px;
             top: 75%;
         }
-        .swiper-button-prev{
+        .swiper-button-prev {
             left: 80%;
             top: 75%;
         }
     }
 
-    .review-video{
-        iframe{
+    .review-video {
+        iframe {
             aspect-ratio: 1.77;
             height: 300px;
             width: 218px;
-            border-radius: 20px;        
+            border-radius: 20px;
         }
     }
     .review-video-slider {
@@ -843,12 +843,12 @@ label {
             display: flex;
             align-items: center;
         }
-    
+
         .swiper-slide {
             display: flex;
             justify-content: center;
             align-items: center;
-    
+
             .review-video {
                 iframe {
                     width: 100%;
@@ -860,12 +860,12 @@ label {
                 }
             }
         }
-    
-        .swiper-button-next, 
+
+        .swiper-button-next,
         .swiper-button-prev {
             color: #333;
         }
-        
+
         .swiper-button-next {
             position: absolute;
             height: 105%;
@@ -883,10 +883,114 @@ label {
             }
         }
     }
-    
 }
 
-.section-8{
+.section-8 {
     padding: 80px 0;
     background-color: $primary_white;
+    button{
+        margin-top: 20px;
+    }
+}
+
+.footer {
+    padding: 60px 0;
+    background-color: $primary_white;
+    border-top: 1px solid $border_color;
+    .logo-section-footer {
+        .logo {
+            p {
+                font-family: $primary_regular;
+                margin-top: 4px;
+                padding-left: 4px;
+            }
+        }
+        p {
+            font-family: $primary_semi_bold;
+            margin-top: 12px;
+        }
+    }
+    .footer-heading {
+        font-size: 20px;
+        line-height: 24px;
+        font-family: $primary_semi_bold;
+        margin-bottom: 16px;
+    }
+    ul {
+        li {
+            padding: 4px 0;
+            a {
+                color: $primary_text_secondary;
+                font-size: 14px;
+                line-height: 22px;
+                font-family: $primary_regular;              
+                cursor: pointer;
+                &:hover {                    
+                    color: $primary_black;
+                    transition: 0.3s ease-in-out;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        bottom: 0;
+                        left: 0;
+                        height: 1px;
+                        transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+                        transform-origin: right;
+                        transform: scaleX(1);
+                        background: $primary_color;
+                        transform-origin: left;
+                        bottom: -5px;
+                        animation: lineth 0.5s ease-in-out;
+                        @keyframes lineth {
+                            from {transform: scaleX(0);}
+                              to {transform: scaleX(1);}
+                            }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom{
+    border-top: 1px solid $border_color;
+    padding: 12px 0;
+    .copyright-section{
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            font-family: $primary_medium;
+            color: $primary_text_secondary;
+
+            }
+    }
+
+    .social-icons{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 12px;
+        .bi{
+            background: $primary_gray;
+            border: 1px solid $border_color;
+            width: 28px;
+            height: 28px;
+            font-size: 16px;
+            line-height: 1;
+            display: flex;
+            padding-top: 2px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover{
+                background: $primary_black;
+                color: $primary_white;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
 }

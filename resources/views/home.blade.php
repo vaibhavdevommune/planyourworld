@@ -1,121 +1,6 @@
 @extends('layouts.guest')
 
 @section('content')
-
-<section class="top-header">
-    <div class="container">
-        <div class="row align-items-center justify-content-start justify-content-sm-between">
-            <div class="col-9 col-sm-6">
-                <ul class="d-flex align-items-center">
-                    Our Presence:
-                    <li>
-                        New Delhi
-                    </li>
-                    <li>
-                        Mumbai
-                    </li>
-                    <li>
-                        Lucknow
-                    </li>
-                </ul>
-            </div>
-            <div class="col-3 col-sm-6 mt-2 mt-sm-0">
-                <div class="right d-flex align-items-center justify-content-end">
-                    <a href="tel:9599812237" class="wtsap d-flex align-items-center">
-                        <img src="{{asset('assets/images/whatsapp.svg')}}" alt="">
-                        <a href="tel:9599812237" class="ps-1 d-none d-lg-block whtsap-num">+91 9599812237</a>
-                    </a>
-                    <a class="btn ms-3">
-                        <div class="d-none d-lg-block">
-                            Course Login
-                        </div>
-                        <i class="bi bi-box-arrow-in-left d-block d-lg-none"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="header">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-sm-4">
-                <div class="logo d-flex align-items-center">
-                    <img src="{{asset('assets/images/favi.svg')}}" alt="">
-                    <p>PLAN YOUR WORLD</p>
-                </div>
-            </div>
-            <div class="col-sm-8">
-                <div class="main-menu">
-                    <ul>
-                        <li class="active">
-                            About
-                        </li>
-                        <li>
-                            CFP Training
-                        </li>
-                        <li>
-                            Articles
-                        </li>
-                        <li>
-                            <div class="menu-heading d-flex align-items-center">
-                                Courses for Investors
-                                <i class="bi bi-chevron-down ps-2"></i>
-                            </div>
-                            <ul class="submenu">
-                                <li>
-                                    Courses for Investors
-                                </li>
-                                <li>
-                                    Courses for Investors
-                                </li>
-                                <li>
-                                    Courses for Investors
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="menu-heading d-flex align-items-center">
-                                Training for Financial Advisors
-                                <i class="bi bi-chevron-down ps-2"></i>
-                            </div>
-                            <ul class="submenu">
-                                <li>
-                                    Courses for Investors
-                                </li>
-                                <li>
-                                    Courses for Investors
-                                </li>
-                                <li>
-                                    Courses for Investors
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="menu-heading d-flex align-items-center">
-                                Download Tools
-                                <i class="bi bi-chevron-down ps-2"></i>
-                            </div>
-                            <ul class="submenu">
-                                <li>
-                                    Courses for Investors
-                                </li>
-                                <li>
-                                    Courses for Investors
-                                </li>
-                                <li>
-                                    Courses for Investors
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <section class="hero-section">
     <div class="container">
         <p class="cfp">By Viplav Majumdar, CFP</p>
@@ -634,28 +519,28 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-5 col-12 ">
-            <h4 class="text-center">
-                Start <span class="text-danger">Learning</span> Now
-            </h4>
-            <form action="" class="d-flex flex-column gap-2 mt-4">
-                <div class="form-group">
-                    <label for="fullName" class="form-label">Full Name</label>
-                    <input type="text" id="fullName" placeholder="Enter Full Name" class="form-control">
-                </div>
+                <h4 class="text-center">
+                    Start <span class="text-danger">Learning</span> Now
+                </h4>
+                <form action="" class="d-flex flex-column gap-2 mt-4">
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Enter Full Name" class="form-control">
+                    </div>
 
-                <div class="form-group">
-                    <label for="emailAddress" class="form-label">Email Address</label>
-                    <input type="email" id="emailAddress" placeholder="Enter Email Address" class="form-control">
-                </div>
+                    <div class="form-group">
+                        <label for="emailAddress" class="form-label">Email Address</label>
+                        <input type="email" id="emailAddress" placeholder="Enter Email Address" class="form-control">
+                    </div>
 
-                <div class="form-group">
-                    <label for="phoneNumber" class="form-label">Phone Number</label>
-                    <input type="tel" id="phoneNumber" placeholder="Enter Phone Number" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-primary">Buy Now @ <strike>₹3,298</strike> Just For
-                    ₹499</button>
-            </form>
-        </div>
+                    <div class="form-group">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="tel" id="phoneNumber" placeholder="Enter Phone Number" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Buy Now @ <strike>₹3,298</strike> Just For
+                        ₹499</button>
+                </form>
+            </div>
         </div>
     </div>
 </section>
